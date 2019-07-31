@@ -1,10 +1,11 @@
 package com.stackroute;
 
 import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
 
 //Class having main method
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 //        instance of JdbcBasicDemo class
         JdbcBasicDemo jdbcBasicDemo = new JdbcBasicDemo();
 //        To get details from database
@@ -17,6 +18,8 @@ public class App {
 //        instance of resultset meta data demo class
         ResultSetMetaDataDemo resultMetaData= new ResultSetMetaDataDemo();
         resultMetaData.displayResultMetaData();
-
+//        instance of row set demo class
+        RowSetDemo rowSetDemo= new RowSetDemo();
+        rowSetDemo.displayRow();
     }
 }

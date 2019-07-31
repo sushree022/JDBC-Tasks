@@ -9,5 +9,8 @@ public class App {
         jdbcBasicDemo.displayUser();
 //        To get details according to name
         jdbcBasicDemo.getUserByName("PP");
+//        instance of database metadata demo class
+        DataBaseMetaDataDemo metaData = new DataBaseMetaDataDemo();
+        metaData.displayMetaData();
     }
 }

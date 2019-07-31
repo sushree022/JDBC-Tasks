@@ -1,5 +1,7 @@
 package com.stackroute;
 
+import java.sql.ResultSetMetaData;
+
 //Class having main method
 public class App {
     public static void main(String[] args) {
@@ -12,5 +14,9 @@ public class App {
 //        instance of database metadata demo class
         DataBaseMetaDataDemo metaData = new DataBaseMetaDataDemo();
         metaData.displayMetaData();
+//        instance of resultset meta data demo class
+        ResultSetMetaDataDemo resultMetaData= new ResultSetMetaDataDemo();
+        resultMetaData.displayResultMetaData();
+
     }
 }

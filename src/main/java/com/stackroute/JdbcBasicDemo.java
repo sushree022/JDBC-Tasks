@@ -11,7 +11,8 @@ public class JdbcBasicDemo {
             e.printStackTrace();
         }
 //        connecting java application with mysql database
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/user?useSSL=false", "root", "Root123");
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/user?useSSL=false",
+                "root", "Root123");
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery("Select * from user");) {
             while (resultSet.next()) {

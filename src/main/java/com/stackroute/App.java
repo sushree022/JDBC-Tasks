@@ -24,5 +24,8 @@ public class App {
 //        instance of Jdbc Batch Processing Demo class created
         JdbcBatchProcessingDemo batchProcessing= new JdbcBatchProcessingDemo();
         batchProcessing.batchProcessingDemo();
+//        instance of Jdbc transaction demo created
+        JdbcTransactionDemo transaction= new JdbcTransactionDemo();
+        transaction.jdbcTransaction();
     }
 }

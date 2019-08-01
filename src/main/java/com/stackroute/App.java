@@ -21,5 +21,8 @@ public class App {
 //        instance of row set demo class
         RowSetDemo rowSetDemo= new RowSetDemo();
         rowSetDemo.displayRow();
+//        instance of Jdbc Batch Processing Demo class created
+        JdbcBatchProcessingDemo batchProcessing= new JdbcBatchProcessingDemo();
+        batchProcessing.batchProcessingDemo();
     }
 }
